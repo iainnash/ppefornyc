@@ -8,6 +8,8 @@ import PaySuccess from './pages/PaySuccess.vue';
 import NearGoal from './pages/NearGoal.vue';
 import PayCancel from './pages/PayCancel.vue';
 
+import './assets/styles/index.css';
+
 Vue.config.productionTip = false
 
 Vue.use(VueRouter);
