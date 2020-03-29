@@ -5,11 +5,11 @@
       <h2>
         Sunday 3/29 mini-Festival lineup
       </h2>
-      <div className="flex mb-4">
-        <img className="w-1/2" src="../assets/3_29/pari.jpg" />
-        <img className="w-1/2" src="../assets/3_29/jhan.jpg" />
-        <img className="w-1/2" src="../assets/3_29/tekbeatz.jpg" />
-        <img className="w-1/2" src="../assets/3_29/plus_minus.jpg" />
+      <div class="flex mb-4">
+        <img class="w-1/2" src="../assets/3_29/pari.jpg" />
+        <img class="w-1/2" src="../assets/3_29/jhan.jpg" />
+        <img class="w-1/2" src="../assets/3_29/tekbeatz.jpg" />
+        <img class="w-1/2" src="../assets/3_29/plus_minus.jpg" />
       </div>
     </div>
     <h1>Help Donate</h1>

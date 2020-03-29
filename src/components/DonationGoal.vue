@@ -2,9 +2,8 @@
   <div v-if="amount">
     <div class="progress-bg">
       <div class="progress-bar">
-        <h3 class="raised">${{amount}}&nbsp;raised</h3>
+        <h3 class="raised">${{Number(amount).toLocaleString()}}&nbsp;raised</h3>
       </div>
-
       <h3 class="goal">Goal: $4,200</h3>
     </div>
   </div>
