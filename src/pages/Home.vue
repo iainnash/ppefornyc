@@ -1,6 +1,17 @@
 <template>
 <div>
-  <!-- <player /> -->
+    <player />
+    <div>
+      <h2>
+        Sunday 3/29 mini-Festival lineup
+      </h2>
+      <div className="flex mb-4">
+        <img className="w-1/2" src="../assets/3_29/pari.jpg" />
+        <img className="w-1/2" src="../assets/3_29/jhan.jpg" />
+        <img className="w-1/2" src="../assets/3_29/tekbeatz.jpg" />
+        <img className="w-1/2" src="../assets/3_29/plus_minus.jpg" />
+      </div>
+    </div>
     <h1>Help Donate</h1>
     <div>
       <h3>Medical Protective Gear for NYC</h3>
