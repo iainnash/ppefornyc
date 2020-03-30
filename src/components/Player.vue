@@ -6,8 +6,8 @@ export default {
     name: 'player',
   mounted() {
     const options = {
-      width: Math.min(window.innerWidth, 1220),
-      height: Math.min(window.innerWidth, 800),
+      width: Math.min(window.innerWidth, 1280),
+      height: Math.min(window.innerWidth, 720),
       channel: "viralbeats"
     };
     this.player = new window.Twitch.Player("twitchplayer", options);
@@ -24,3 +24,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+.player iframe {
+  margin: 0 auto;
+}
+</style>

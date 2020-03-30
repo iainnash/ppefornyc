@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div>
-      <h1><a href="/">VIRALBEATS</a></h1>
+      <h1 class="main"><a href="/">VIRALBEATS</a></h1>
       <!-- <h2>Livestream starts in:</h2> -->
       <!-- <countdown date="2020-03-21 20:00:00" /> -->
       <donation-goal />
@@ -21,16 +21,16 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: 'Patua One'; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
-h1 {
+#app h1, #app h2, #app h3, #app h4, #app h5, #app h6 {
+  font-family: 'Patua One';
+}
+#app h1.main {
   background: url('./assets/logo.jpg') no-repeat center center;
   width: auto;
   height: 200px;

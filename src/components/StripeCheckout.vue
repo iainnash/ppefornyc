@@ -83,7 +83,6 @@
   </form>
 </template>
 <script>
-// import {Card, createToken} from 'vue-stripe-elements-plus';
 import FancyRadio from "./FancyRadio.vue";
 import Button from "./Button.vue";
 
@@ -91,10 +90,11 @@ export default {
   methods: {
     submit(evt) {
       this.loading = true;
-    evt.preventDefault();
+      evt.preventDefault();
       const formData = new FormData();
       formData.append("amount", this.amountlocal * 100);
       formData.append("email", this.email);
+      formData.append("name", this.name);
       fetch("https://iain-viralbeats.builtwithdark.com/newpaymentrequest", {
         method: "POST",
         mode: "cors",
@@ -114,9 +114,6 @@ export default {
             });
         });
     },
-    buy() {
-      // createToken().then(data => console.log(data));
-    },
     updateOtherPrice(evt) {
       this.otherselected = true;
       if (isNaN(parseInt(evt.target.value))) {
@@ -130,6 +127,9 @@ export default {
         this.amountinvalid = false;
       }
     },
+    buy() {
+      // noop
+    },
     updatePrice(amount) {
       if (!amount) {
         this.otherselected = true;
@@ -140,27 +140,9 @@ export default {
       }
       this.amountinvalid = false;
     },
-    hasToken(payment, ev) {
-      console.log("has pyament", payment, ev);
-      this.working = true;
-      // update system
-    },
-    getOptions() {
-      return {
-        country: "US",
-        currency: "usd",
-        total: {
-          label: "ViralBeats donation",
-          amount: this.amountlocal
-        },
-        requestPayerName: true,
-        requestPayerEmail: true
-      };
-    }
   },
   data() {
     return {
-      stripeApi: "",
       loading: false,
       complete: false,
       amountinvalid: false,
@@ -169,14 +151,6 @@ export default {
       amountlocal: 10,
       name: "",
       email: "",
-      cardOptions: this.getOptions(),
-      buyamounts: [
-        {
-          value: 1000,
-          text: "$10.00",
-          brief: "asdf"
-        }
-      ]
     };
   },
   components: {
@@ -212,7 +186,7 @@ export default {
   margin-top: 20px;
 }
 .other input {
-  width: 80px;
+  /* width: 80px; */
   background: transparent;
 }
 .other input.invalid {
@@ -226,7 +200,7 @@ export default {
   max-width: 220px;
 }
 .otherwrapper {
-  width: 400px;
+  max-width: 400px;
   display: flex;
   font-size: 1.2em;
   vertical-align: center;
@@ -267,7 +241,7 @@ fieldset label:not(:last-child) {
   border-bottom: 1px solid #f0f5fa;
 }
 fieldset label span {
-  min-width: 125px;
+  /* min-width: 125px; */
   padding: 0 15px;
   text-align: right;
 }
