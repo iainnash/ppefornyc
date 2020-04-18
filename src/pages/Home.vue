@@ -1,6 +1,6 @@
 <template>
 <div>
-  <!-- <player /> -->
+  <player />
 <div class="main mt-4">
   <div class="container px-4 mb-4">
     <h1 class="text-4xl text-center">A livestream series of fundraisers</h1>
@@ -16,14 +16,9 @@
   </div>
   <div class="container px-4">
     <h2 class="text-2xl text-center">
-      Sunday 3/29 Mini-Festival lineup
+      Mini-Festival lineup
     </h2>
-    <div class="flex mb-4">
-      <img alt="Pari" src="../assets/3_29/pari.jpg" />
-      <img alt="Jhan" class="" src="../assets/3_29/jhan.jpg" />
-      <img alt="Tekbeatz" class="" src="../assets/3_29/tekbeatz.jpg" />
-      <img alt="plusminus" class="" src="../assets/3_29/plus_minus.jpg" />
-    </div>
+    <insta />
     <p class="text-xl">Lineup for next week will be announced Wednesday Apr 1<sup>st</sup>.</p>
   </div>
   <div class="container px-4">
@@ -85,12 +80,14 @@
 import StripeCheckout from '../components/StripeCheckout.vue'
 import Subscribe from '../components/Subscribe.vue'
 import Player from '../components/Player.vue'
+import Insta from '../components/Insta.vue'
 
 export default {
     components: {
         StripeCheckout,
         [Player.name]: Player,
         [Subscribe.name]: Subscribe,
+        [Insta.name]: Insta,
     }  
 }
 </script>

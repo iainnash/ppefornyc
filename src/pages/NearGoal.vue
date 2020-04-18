@@ -46,10 +46,10 @@ export default {
         return {
             hour: (((new Date()).getUTCHours() + 1) % 24),
             djs: [
-                {hour: 0, name: 'Pari'},
-                {hour: 1, name: 'jhan'},
-                {hour: 2, name: '@tekbeatz'},
-                {hour: 3, name: '+/- @plusminusmusic'},
+                {hour: 0, name: 'None'},
+                {hour: 1, name: 'cheezy'},
+                {hour: 2, name: 'xkylar'},
+                {hour: 3, name: 'None'},
             ],
         }
     }
