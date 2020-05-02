@@ -58,17 +58,24 @@
     <div class="flex content-start flex-wrap">
       <div class="w-1/3 p-4">
         <h3 class="text-l font-semibold">Ordered</h3>
-        <p class="text-m"># 1500</p>
+        <p class="text-m"># 1055</p>
       </div>
       <div class="w-1/3 p-4">
         <h3 class="text-l font-semibold">Shipped</h3>
-        <p class="text-m"># 500</p>
+        <p class="text-m"># 1055</p>
       </div>
       <div class="w-1/3 p-4">
         <h3 class="text-l font-semibold">Distributed</h3>
-        <p class="text-m"># 0</p>
+        <p class="text-m"># 1055</p>
       </div>
     </div>
+  </div>
+  <div class="container px-4">
+    <h1 class="text-2xl text-center">Updates</h1>
+    <p class="text-m">Thanks to all your donations we've been able to order and distribute 2 orders of masks so far!</p>
+    <p class="text-m">We distributed the first order to Mt Sinai and Presbyterian in Manhattan, and distributed the second order through #masks4medicine, a doctor-led effort to distribute PPE to doctors across NYC.</p>
+    <p class="text-m">The first order was of KN95 and the second order was of hospital and NIOSH approved masks for ER use etc. at a higher cost but much more needed at hospitals.</p>
+    <p class="text-m">We’ll soon keep you updated as to the third shipment.</p>
   </div>
   <div class="container">
     <stripe-checkout />
