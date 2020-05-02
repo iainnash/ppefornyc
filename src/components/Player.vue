@@ -10,7 +10,7 @@ export default {
       height: Math.min(window.innerWidth, 720),
       channel: "viralbeats"
     };
-    this.player = new window.Twitch.Player("twitchplayer", options);
+    this.player = new window.Twitch.Embed("twitchplayer", options);
     window.addEventListener("resize", this.updateSize);
   },
   destroyed() {
@@ -18,8 +18,12 @@ export default {
   },
   methods: {
     updateSize() {
+      try{
       this.player.setWidth(Math.min(window.innerWidth, 1220));
       this.player.setHeight(Math.min(window.innerHeight, 1220));
+      }catch(e){
+        console.error(e);
+      }
     }
   }
 };

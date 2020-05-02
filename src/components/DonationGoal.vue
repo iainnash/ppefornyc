@@ -2,11 +2,11 @@
 <div>
   <div class="bg-white container" v-if="amount">
     <div :class="`progress-bg cont h-14 flex flex-initial font-size-xxlg ${show ? 'shown-bar' : 'hidden-bar'}`">
-      <div class="progress-bar p-4 bg-black text-white overflow-hidden position-relative" :style="`${show ? `width: ${(amount/4200.0)*100}%;` : ''}`">
+      <div class="progress-bar p-4 bg-black text-white overflow-hidden position-relative" :style="`${show ? `width: ${(amount/5300.0)*100}%;` : ''}`">
         <h3 class="whitespace-no-wrap raised">${{Number(amount).toLocaleString()}}&nbsp;raised</h3>
       </div>
 
-      <h3 class="goal p-4 bg-white w-auto color-black">Goal: $4,200</h3>
+      <h3 class="goal p-4 bg-white w-auto color-black">Goal: $5,300</h3>
     </div>
   </div>
 </div>
